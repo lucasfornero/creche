@@ -23,8 +23,9 @@ ActiveRecord::Schema.define(version: 20180415041406) do
     t.string "Telefone"
     t.string "Roupa"
     t.string "Calcado"
-    t.string "Saude"
+    t.boolean "Saude"
     t.string "Medicamento"
+    t.string "Observacao"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

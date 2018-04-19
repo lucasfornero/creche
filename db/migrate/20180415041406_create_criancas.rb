@@ -11,7 +11,7 @@ class CreateCriancas < ActiveRecord::Migration[5.1]
       t.string :Telefone
       t.string :Roupa
       t.string :Calcado
-      t.string :Saude
+      t.boolean :Saude
       t.string :Medicamento
       t.string :Observacao
 
