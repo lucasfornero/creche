@@ -1,0 +1,2 @@
+class Crianca < ApplicationRecord
+end

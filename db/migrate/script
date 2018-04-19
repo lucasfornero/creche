@@ -1,0 +1,40 @@
+/*==============================================================*/
+/* Table: CADASTRO_CRIANCA                                      */
+/*==============================================================*/
+create table CADASTRO_CRIANCA
+(
+   COD_CRIANCA          int not null auto_increment,
+   COD_USUARIO          int not null,
+   NOM_CRIANCA          varchar(50),
+   NOM_PAI              varchar(50),
+   NOM_MAE              varchar(50),
+   NOM_RESPONSAVEL      varchar(50),
+   DTA_NASCIMENTO_CRIANCA datetime,
+   DES_TURMA            varchar(30),
+   DES_ENDERECO         varchar(100),
+   DES_TELEFONE         varchar(20),
+   DES_TAMANHO_ROUPA_CRIANCA varchar(20),
+   DES_TAMANHO_CALCADO_CRIANCA varchar(20),
+   DES_SAUDE_CRIANCA    varchar(250),
+   DES_MEDICAMENTO_CRIANCA varchar(50)
+);
+
+alter table CADASTRO_CRIANCA
+   add primary key (COD_CRIANCA, COD_USUARIO);
+
+/*==============================================================*/
+/* Table: USUARIO                                               */
+/*==============================================================*/
+create table USUARIO
+(
+   COD_USUARIO          int not null auto_increment,
+   NOM_USUARIO          varchar(50),
+   DES_LOGIN            varchar(50),
+   DES_SENHA            varchar(20)
+);
+
+alter table USUARIO
+   add primary key (COD_USUARIO);
+
+alter table CADASTRO_CRIANCA add constraint FK_Reference_1 foreign key (COD_USUARIO)
+      references USUARIO (COD_USUARIO);
