@@ -1,4 +1,25 @@
 pt-BR:
+  
+  activerecord:
+    models:
+      crianca:
+        one: Criança
+        other: Crianças
+      calcado:
+        one: Calçado
+        other: Calçados
+      user:
+        one: Usuário
+        other: Usuários
+    attributes:
+      crianca:
+        nome: "Nome da Criança"
+        nascimento: "Data de Nascimento"
+        saude: "Criança apresenta problemas de saúde?"
+      calcado:
+        numero: "Tamanho do calçado"
+
+
   views:
   admin:
     home:

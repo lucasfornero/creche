@@ -1,3 +1,4 @@
 class Crianca < ApplicationRecord
-    validates :Nome, :Mae, presence: true
+  belongs_to :turma
+  belongs_to :calcado, optional:true
 end

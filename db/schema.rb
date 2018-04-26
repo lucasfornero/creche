@@ -10,22 +10,36 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180415041406) do
+ActiveRecord::Schema.define(version: 20180426022915) do
+
+  create_table "calcados", force: :cascade do |t|
+    t.integer "numero"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "criancas", force: :cascade do |t|
-    t.string "Nome"
-    t.string "Pai"
-    t.string "Mae"
-    t.string "Responavel"
-    t.date "Nascimento"
-    t.string "Turma"
-    t.string "Endereco"
-    t.string "Telefone"
-    t.string "Roupa"
-    t.string "Calcado"
-    t.boolean "Saude"
-    t.string "Medicamento"
-    t.string "Observacao"
+    t.string "nome"
+    t.date "nascimento"
+    t.integer "turma_id"
+    t.string "mae"
+    t.string "pai"
+    t.string "responsavel"
+    t.string "telefone"
+    t.string "endereco"
+    t.string "roupa"
+    t.integer "calcado_id"
+    t.boolean "saude"
+    t.string "medicamento"
+    t.text "observacao"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["calcado_id"], name: "index_criancas_on_calcado_id"
+    t.index ["turma_id"], name: "index_criancas_on_turma_id"
+  end
+
+  create_table "turmas", force: :cascade do |t|
+    t.string "turma"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

@@ -1,4 +1,6 @@
 RailsAdmin.config do |config|
+  
+  config.main_app_name = ["Grupo Espírita Lares Unidos", "CRECHE"]
 
   ### Popular gems integration
 
@@ -22,6 +24,38 @@ RailsAdmin.config do |config|
   ## == Gravatar integration ==
   ## To disable Gravatar integration in Navigation Bar set to false
   # config.show_gravatar = true
+  
+  config.model Crianca do
+    navigation_icon 'fa fa-child'
+    create do
+      field :nome
+      field :calcado
+    end
+  end
+  
+  config.model User do
+    navigation_icon 'fa fa-users'
+  end
+  
+  config.model Turma do
+    navigation_icon 'fa fa-book'
+  end
+ 
+  config.model User do
+    navigation_label 'Administração Site'
+  end
+
+  config.model Crianca do
+    weight -1
+  end
+  
+  config.model Turma do
+    weight 0
+  end
+  
+  config.model Calcado do
+    weight 1
+  end
 
   config.actions do
     dashboard                     # mandatory

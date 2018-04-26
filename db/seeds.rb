@@ -1,7 +1,28 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+# Criando tamanhos de calçado
+Calcado.create numero: 17
+Calcado.create numero: 18
+Calcado.create numero: 19
+Calcado.create numero: 20
+Calcado.create numero: 21
+Calcado.create numero: 22
+Calcado.create numero: 23
+Calcado.create numero: 24
+Calcado.create numero: 25
+Calcado.create numero: 26
+Calcado.create numero: 27
+Calcado.create numero: 28
+Calcado.create numero: 29
+Calcado.create numero: 30
+Calcado.create numero: 31
+Calcado.create numero: 32
+Calcado.create numero: 33
+Calcado.create numero: 34
+Calcado.create numero: 35
+Calcado.create numero: 36
+Calcado.create numero: 37
+Calcado.create numero: 38
+Calcado.create numero: 39
+Calcado.create numero: 40
+Calcado.create numero: 41
+Calcado.create numero: 42
+Calcado.create numero: 43

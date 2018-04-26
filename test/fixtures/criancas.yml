@@ -1,29 +1,31 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  Nome: MyString
-  Pai: MyString
-  Mae: MyString
-  Responavel: MyString
-  Nascimento: 2018-04-15
-  Turma: MyString
-  Endereco: MyString
-  Telefone: MyString
-  Roupa: MyString
-  Calcado: MyString
-  Saude: MyString
-  Medicamento: MyString
+  nome: MyString
+  nascimento: 2018-04-26
+  turma: one
+  mae: MyString
+  pai: MyString
+  responsavel: MyString
+  telefone: MyString
+  endereco: MyString
+  roupa: MyString
+  calcado: one
+  saude: false
+  medicamento: MyString
+  observacao: MyText
 
 two:
-  Nome: MyString
-  Pai: MyString
-  Mae: MyString
-  Responavel: MyString
-  Nascimento: 2018-04-15
-  Turma: MyString
-  Endereco: MyString
-  Telefone: MyString
-  Roupa: MyString
-  Calcado: MyString
-  Saude: MyString
-  Medicamento: MyString
+  nome: MyString
+  nascimento: 2018-04-26
+  turma: two
+  mae: MyString
+  pai: MyString
+  responsavel: MyString
+  telefone: MyString
+  endereco: MyString
+  roupa: MyString
+  calcado: two
+  saude: false
+  medicamento: MyString
+  observacao: MyText
