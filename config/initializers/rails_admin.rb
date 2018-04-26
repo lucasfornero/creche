@@ -27,10 +27,6 @@ RailsAdmin.config do |config|
   
   config.model Crianca do
     navigation_icon 'fa fa-child'
-    create do
-      field :nome
-      field :calcado
-    end
   end
   
   config.model User do

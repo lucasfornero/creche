@@ -50,6 +50,7 @@ gem 'jbuilder', '~> 2.5'
 
 group :production do
   gem 'pg', '0.18.4'
+  gem 'rails_admin_rollincode', '~> 1.0'
 end
 
 group :development, :test do
