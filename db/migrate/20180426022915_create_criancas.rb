@@ -11,7 +11,7 @@ class CreateCriancas < ActiveRecord::Migration[5.1]
       t.string :endereco
       t.string :roupa
       t.references :calcado, foreign_key: true
-      t.boolean :saude
+      t.string :saude
       t.string :medicamento
       t.text :observacao
 

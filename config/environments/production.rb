@@ -1,7 +1,7 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
   
-config.i18n.enforce_available_locales = false
+config.i18n.enforce_available_locales = true
 config.i18n.available_locales = ["pt-BR"]
 config.i18n.default_locale = :'pt-BR'
 
@@ -83,6 +83,25 @@ config.i18n.default_locale = :'pt-BR'
   # Use a different logger for distributed setups.
   # require 'syslog/logger'
   # config.logger = ActiveSupport::TaggedLogging.new(Syslog::Logger.new 'app-name')
+
+config.action_mailer.default_url_options = { :host => 'https://ancient-dusk-97160.herokuapp.com' }
+# ActionMailer Config
+# Setup for production - deliveries, no errors raised
+config.action_mailer.delivery_method = :smtp
+config.action_mailer.perform_deliveries = true
+config.action_mailer.raise_delivery_errors = false
+config.action_mailer.default :charset => "utf-8"
+
+  
+config.action_mailer.smtp_settings = {
+  address: "smtp.gmail.com",
+  port: 587,
+  domain: "https://ancient-dusk-97160.herokuapp.com",
+  authentication: "plain",
+  enable_starttls_auto: true,
+  user_name: ENV["lucasfornero@gmail.com"],
+  password: ENV["essasenhaehparaolucascesar"]
+}
 
   if ENV["RAILS_LOG_TO_STDOUT"].present?
     logger           = ActiveSupport::Logger.new(STDOUT)

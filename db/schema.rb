@@ -29,7 +29,7 @@ ActiveRecord::Schema.define(version: 20180426022915) do
     t.string "endereco"
     t.string "roupa"
     t.integer "calcado_id"
-    t.boolean "saude"
+    t.string "saude"
     t.string "medicamento"
     t.text "observacao"
     t.datetime "created_at", null: false

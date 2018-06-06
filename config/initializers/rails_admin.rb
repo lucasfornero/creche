@@ -24,9 +24,13 @@ RailsAdmin.config do |config|
   ## == Gravatar integration ==
   ## To disable Gravatar integration in Navigation Bar set to false
   # config.show_gravatar = true
-  
+
+
   
   config.model User do
+    list do
+        exclude_fields :created_at, :updated_at, :reset_password_sent_at, :remember_created_at
+      end
     create do
       field :email do
         required true
@@ -42,6 +46,21 @@ end
 
 
   config.model Crianca do
+    create do
+      include_all_fields
+      field :nome do
+        required true
+      end
+      field :nascimento do
+        required true
+      end
+      field :responsavel do
+        required true
+      end
+      field :telefone do
+        required true
+      end
+      end
     navigation_icon 'fa fa-child'
   end
   
@@ -50,10 +69,16 @@ end
   end
   
   config.model Turma do
+    list do
+        exclude_fields :created_at, :updated_at
+      end
     navigation_icon 'fa fa-book'
   end
   
 config.model Calcado do
+  list do
+        exclude_fields :created_at, :updated_at
+      end
     navigation_icon 'fa fa-adjust'
   end
   
@@ -63,6 +88,9 @@ config.model Calcado do
 end
 
   config.model Crianca do
+    list do
+        exclude_fields :pai
+      end
     weight -1
   end
   

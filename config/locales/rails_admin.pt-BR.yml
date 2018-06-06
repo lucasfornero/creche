@@ -15,7 +15,12 @@ pt-BR:
       crianca:
         nome: "Nome da Criança"
         nascimento: "Data de Nascimento"
-        saude: "Criança apresenta problemas de saúde?"
+        saude: "Problemas de saúde presente?"
+        mae: "Mãe"
+        responsavel: "Responsável"
+        endereco: "Endereço"
+        calcado: "Número do calçado"
+        observacao: "Observação"
       calcado:
         numero: "Tamanho do calçado"
 
@@ -52,7 +57,7 @@ pt-BR:
       object_not_found: "%{model} com identificador '%{id}' não encontrado"
     table_headers:
       model_name: "Nome do modelo"
-      last_used: "Última vez usado em"
+      last_created: "Último Registro"
       records: "Registros"
       username: "Usuário"
       changes: "Alterações"
