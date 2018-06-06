@@ -61,13 +61,10 @@ config.action_mailer.raise_delivery_errors = true
 config.action_mailer.default :charset => "utf-8"
 
 config.action_mailer.smtp_settings = {
-  address: "smtp.gmail.com",
-  port: 587,
-  domain: "https://ancient-dusk-97160.herokuapp.com",
-  authentication: "plain",
-  enable_starttls_auto: true,
-  user_name: ENV["lucasfornero@gmail.com"],
-  password: ENV["essasenhaehparaolucascesar"]
+  :address   => "smtp.mandrillapp.com",
+  :port      => 587,
+  :user_name => ENV["Fornero"],
+  :password  => ENV["0RX3IvwT9IxY1evY0abEww"]
 }
   
 
