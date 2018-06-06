@@ -95,7 +95,7 @@ config.action_mailer.default :charset => "utf-8"
   
 config.action_mailer.smtp_settings = {
   :address   => "smtp.mandrillapp.com",
-  :port      => 587,
+  :port      => 25,
   :user_name => ENV["Fornero"],
   :password  => ENV["0RX3IvwT9IxY1evY0abEww"]
 }
