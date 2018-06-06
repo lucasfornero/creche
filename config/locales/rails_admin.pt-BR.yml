@@ -19,7 +19,6 @@ pt-BR:
       calcado:
         numero: "Tamanho do calçado"
 
-
   views:
   admin:
     home:

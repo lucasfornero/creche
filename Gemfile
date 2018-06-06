@@ -10,7 +10,11 @@ end
 gem 'rails', '~> 5.1.5'
 
 
-
+gem 'sass-rails', '~> 5.0'
+# Use Uglifier as compressor for JavaScript assets
+gem 'uglifier', '>= 1.3.0'
+# Use CoffeeScript for .coffee assets and views
+gem 'coffee-rails', '~> 4.2'
 #Bootstrap admin
 gem 'bootstrap_sb_admin_base_v2'
 # Repository for collection local

@@ -1,28 +1,14 @@
-# Criando tamanhos de calçado
-Calcado.create numero: 17
-Calcado.create numero: 18
-Calcado.create numero: 19
-Calcado.create numero: 20
-Calcado.create numero: 21
-Calcado.create numero: 22
-Calcado.create numero: 23
-Calcado.create numero: 24
-Calcado.create numero: 25
-Calcado.create numero: 26
-Calcado.create numero: 27
-Calcado.create numero: 28
-Calcado.create numero: 29
-Calcado.create numero: 30
-Calcado.create numero: 31
-Calcado.create numero: 32
-Calcado.create numero: 33
-Calcado.create numero: 34
-Calcado.create numero: 35
-Calcado.create numero: 36
-Calcado.create numero: 37
-Calcado.create numero: 38
-Calcado.create numero: 39
-Calcado.create numero: 40
-Calcado.create numero: 41
-Calcado.create numero: 42
-Calcado.create numero: 43
+puts "Cadastrando Calçados" # Criando tamanhos de calçado
+calcados = [ "17","18","19","20","21","22","23","24","25",
+             "26","27","28","29","30","31","32","33","34",
+             "35","36","37","38","39","40","41","42","43"]
+
+calcados.each do |calcado|
+    Calcado.find_or_create_by(numero: calcado)
+end
+
+puts "Calcados cadastrados"
+
+puts "Cadastrando MASTER" # Criando User MASTER
+User.create!(email:"admin@admin.com", password:"NewtonAdminMaster", password_confirmation:"NewtonAdminMaster")
+puts "User MASTER"
